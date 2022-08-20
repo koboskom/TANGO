@@ -26,6 +26,7 @@ def ugc_dummy(path_to_indicators, path_shots_data):
 #  input path to files where shots data are in pickle format
 #  returns updated shots_data
 # change paths to models to fit your configuration
+# uncomment 31/32 to change models 
   cuts,shots_data = video_to_cuts(path_to_indicators, path_shots_data)
   xgb_cl = pickle.load(open("/content/9k_all_set.json", 'rb'))
 #   xgb_cl = pickle.load(open("/content/12k_all_set.json", 'rb'))
