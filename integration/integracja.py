@@ -25,7 +25,7 @@ def video_to_cuts(path_to_indicators, path_shots_data):
 def ugc_dummy(path_to_indicators, path_shots_data):
 #  input path to files where shots data are in pickle format
 #  returns updated shots_data
-  video_to_cuts(path_to_indicators, path_shots_data)
+  cuts,shots_data = video_to_cuts(path_to_indicators, path_shots_data)
   xgb_cl = pickle.load(open("/content/model_precise_quality.json", 'rb'))
 #   xgb_cl = pickle.load(open("/content/model_less_precise_low_quality.json", 'rb'))
   for count, value in enumerate(shots_data):
