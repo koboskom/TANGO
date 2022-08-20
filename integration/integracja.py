@@ -19,7 +19,6 @@ def video_to_cuts(path_to_indicators, path_shots_data):
         'Exposure(bri): ', 'Contrast: ', 'Noise: ', 'Slice: ', 'Flickering:']]
   cuts.columns = ['Blockiness:', 'SA:', 'Blockloss:', 'Blur:', 'TA:',
         'Exposure(bri):', 'Contrast:', 'Noise:', 'Slice:', 'Flickering:']
-  cuts=(cuts-cuts.mean())/cuts.std()
   return cuts, shots_data
 
 def ugc_dummy(path_to_indicators, path_shots_data):
